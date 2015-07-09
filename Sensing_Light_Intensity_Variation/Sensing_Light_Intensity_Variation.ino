@@ -1,8 +1,8 @@
 int LDRPin=A2;//Setup LDR on A2 Pin
 int LEDPin=2; // Set LEd on Pin 2
 //These values below need to be changed based on ambient conditions
-int highThreshold=580;
-int lowThreshold=530;
+int highThreshold=450;
+int lowThreshold=350;
 void setup()
 {
   Serial.begin(9600); //Setup Serial Terminal on 9600bps

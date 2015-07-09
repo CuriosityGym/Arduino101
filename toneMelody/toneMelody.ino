@@ -21,15 +21,19 @@ This example code is in the public domain.
 
 // notes in the melody:
 int melody[] = {
-  NOTE_C4, NOTE_G3,NOTE_G3, NOTE_A3, NOTE_G3,0, NOTE_B3, NOTE_C4};
+  NOTE_C3, NOTE_D3,NOTE_E3, NOTE_F3};
 
 // note durations: 4 = quarter note, 8 = eighth note, etc.:
 int noteDurations[] = {
-  4, 8, 8, 4,4,4,4,4 };
+  2, 2, 2, 2 };
 
 void setup() {
-  // iterate over the notes of the melody:
-  for (int thisNote = 0; thisNote < 8; thisNote++) {
+  
+}
+
+void loop() {
+// iterate over the notes of the melody:
+  for (int thisNote = 0; thisNote < 4; thisNote++) {
 
     // to calculate the note duration, take one second 
     // divided by the note type.
@@ -44,9 +48,7 @@ void setup() {
     // stop the tone playing:
     noTone(buzzerPin);
   }
-}
-
-void loop() {
-  // no need to repeat the melody.
+  
+  delay(4000);
 }
 

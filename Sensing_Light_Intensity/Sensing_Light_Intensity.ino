@@ -12,5 +12,5 @@ void loop()
   
   int lightIntensity=analogRead(LDRPin);// Measure Light Intensity
   Serial.println(lightIntensity);//Print light intensity to Serial Terminal
-  
+  delay(500);
 }
